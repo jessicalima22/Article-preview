@@ -55,7 +55,7 @@ h1{
 
 .content p{
     font-size: 13px;
-    padding: 0 2.6rem 1rem 2rem;
+    padding: 0 2.6rem 1.5rem 2rem;
     line-height: 1.3rem;
     letter-spacing: 0.01rem;
     text-align: left;
@@ -64,11 +64,9 @@ h1{
 }
 
 .profile{
-    
     height: 30%;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .profile p{
@@ -102,12 +100,71 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0 0 4rem;
+    margin: 1rem 0 0 5rem;
 }
 
 .content .iconImg{
     width: 1rem;
-    
-    
-    
+}
+
+
+.bar{
+    height: 28%;
+    display: none; /*flex*/
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.shareImg{
+    height: 1.4rem;
+    margin: 0 0.6rem;
+}
+
+.bar .divIconImg{
+    margin-left: 2rem;
+    margin-top: 0;
+    background-color: hsl(212, 23%, 69%);
+}
+
+.bar .iconImg{
+    filter: brightness(0) invert(1);
+}
+
+.bar p{
+    margin-top: 0;
+    color: hsl(212, 23%, 69%);
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    padding: 0 0.7rem 0 2rem;
+}
+
+
+.balloon{
+    margin: 0 auto; 
+    background: #7e57c2;
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+    display: none;
+}
+
+.balloon:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid aqua;
+    bottom: -20px; /*localização. Experimente alterar para 'bottom'*/
+    left: 20%;
 }
