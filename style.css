@@ -18,14 +18,11 @@ body{
 
 main{
     background-color: white;
-    border-radius: 1rem;
-    
-    width: 90%;
-    height: 32rem;
+    border-radius: 1rem;   
+    width: 88%;
+    height: 31.5rem;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .image {
@@ -33,56 +30,50 @@ main{
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 39%;
-
+    height: 12.5rem;
     border-radius: 1rem 1rem 0 0;    
 }
 
 .content{
-    
     flex-wrap: wrap;
     width: 100%;
-    height: 48%;
+    height: 15.5rem;
     border-radius: 0 0 1rem 1rem;
-    
 }
 
 h1{
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 2.5rem 2rem 1rem 2rem;
     letter-spacing: 0.01rem;
     color: hsl(217, 19%, 35%);
+    
 }
 
 .content p{
     font-size: 13px;
-    padding: 0 2.6rem 1.5rem 2rem;
+    padding: 0 2.2rem 0 2rem;
     line-height: 1.3rem;
     letter-spacing: 0.01rem;
     text-align: left;
     color: hsl(214, 17%, 51%);
-
 }
 
 .profile{
-    height: 30%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;     
 }
 
 .profile p{
-    padding: 0;
-    color: hsl(212, 23%, 69%);
-    
+    font-size: 0.8rem;
+    color: hsl(212, 23%, 69%); 
 }
 
 h2{
     font-size: 0.8rem;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
-
 }
 
-.content .profileImg{
+.profileImg{
     border-radius: 50%;
     width: 2.5rem;
     margin: 0.8rem 1rem 0.8rem 1.7rem;
@@ -103,21 +94,21 @@ h2{
     margin: 1rem 0 0 5rem;
 }
 
-.content .iconImg{
+.iconImg{
     width: 1rem;
 }
 
-
 .bar{
-    height: 28%;
     display: none; /*flex*/
     align-items: center;
     border-radius: 0 0 1rem 1rem;
     background-color: hsl(217, 19%, 35%);
+    flex-grow: 1;
+    height: 4rem;
 }
 
 .shareImg{
-    height: 1.4rem;
+    height: 1.2rem;
     margin: 0 0.6rem;
 }
 
@@ -137,9 +128,101 @@ h2{
     font-weight: 700;
     letter-spacing: 0.4rem;
     padding: 0 0.7rem 0 2rem;
+    font-size: 0.8rem;
+}
+
+@media (min-width:425px){
+    *{
+        font-size: 1.1rem;
+    }
+
+    h1, p {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 768px){
+    
+    main{
+        height: 35rem;
+    }
+
+    .image{
+        height: 35rem;
+    }
+
+    h1{
+        padding-top: 1.5rem;
+    }
+
+    .profile{
+        margin-left: 3rem;
+    }
+
+    .divIconImg{
+        margin-left: 12rem;
+    }
+
+    .bar{
+        height: 5rem;
+    }
+
+    .bar p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .bar .divIconImg{
+        margin-left: 7rem;
+    }
+
+    .shareImg{
+        margin: 0 1.5rem
+    }
+}
+
+@media (min-width: 1023px){
+      *{
+        font-size: 1.2rem;
+      }
+      
+      main{
+        height: 40rem;
+      }
+
+      .profileImg{
+        width: 3.5rem;
+      }
+
+      .nameDate{
+        margin-left: 1.3rem;
+    }
+
+    .divIconImg{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 20rem;
+    }
+    
+    .iconImg{
+        width: 1.5rem;
+    }
+
+    .bar .divIconImg{
+        margin: 1.3rem 0 1.3rem 8rem;
+    }
+
+    .bar p{
+        margin-right: 6.5rem;
+    }
+
+
+
 }
 
 
+
+/*
 .balloon{
     margin: 0 auto; 
     background: #7e57c2;
@@ -155,7 +238,7 @@ h2{
     display: none;
 }
 
-.balloon:after{ /*Triangulo*/
+.balloon:after{ /*Triangulo*/ /*
     content: "";
     width: 0;
     height: 0;
@@ -163,8 +246,8 @@ h2{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
-    /*Aqui entra a cor da "aba" do balão */
+    /*Aqui entra a cor da "aba" do balão 
     border-bottom: 20px solid aqua;
-    bottom: -20px; /*localização. Experimente alterar para 'bottom'*/
+    bottom: -20px; /*localização. Experimente alterar para 'bottom'
     left: 20%;
 }
